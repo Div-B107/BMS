@@ -16,6 +16,20 @@
         <scope>provided</scope>
     </dependency>
 
+         <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.6.0</version>
+</dependency>
+
+   
+<dependency>
+    <groupId>org.hibernate.orm</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.2.15.Final</version>
+</dependency>
+
+
 <!--ByCrypt password hasher-->
     <dependency>
         <groupId>at.favre.lib</groupId>
