@@ -13,7 +13,7 @@ public interface UserService {
 
     Optional<User> findById(Long id);//idye gore axtaris. id parametri qebul edir ve geriye tapilan useri qaytarir
 
-    //****
+
 
     User save(User user);//yeni useri elave etme.parametr olaraq elave edilmeli olan useri qebul edir
     boolean delete(User user); //silmek istenilen useri parametr olaraq qebul edir ve silir
