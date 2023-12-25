@@ -1,6 +1,6 @@
 package com.div.services.impl;
 
-import com.div.models.LoanPayment;
+import com.div.properties.LoanPayment;
 import com.div.services.LoanPaymentService;
 
 import java.util.List;

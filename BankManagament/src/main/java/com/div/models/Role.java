@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "role" , schema = "bmstest")
+@Table(name = "role" , schema = "bank_management")
 
 public class Role {
 

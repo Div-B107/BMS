@@ -10,8 +10,5 @@
         <module name="BankManagament" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="BankManagament" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>

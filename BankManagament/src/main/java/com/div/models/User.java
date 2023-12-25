@@ -20,15 +20,13 @@ import lombok.ToString;
 import java.util.List;
 
 
-@Entity(name = "User")
-@Table(name = "user" , schema ="bmstest")
+@Entity
+@Table(name = "users" , schema ="bank_management")
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
 public class User {
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,10 +35,12 @@ public class User {
     private String firstName;
     @Column(name = "fin", nullable = false, unique = true)
     private String fin;
+    @OneToOne
+    private Loan loan;
 
 
     @ManyToMany(fetch =FetchType.LAZY )
-    @JoinTable( schema = "bmstest",
+    @JoinTable( schema = "bank_management",
             name = "users_roles",
             joinColumns = @JoinColumn(
                     name = "user_id", referencedColumnName = "id"),
