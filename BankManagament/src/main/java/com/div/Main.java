@@ -13,10 +13,10 @@ public class Main {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
 
+        te
 
-        User user = entityManager.find(User.class, 1l);
-        System.out.println(user);
-        System.out.println(user.getRoles());
+
+
 
     }
 }
