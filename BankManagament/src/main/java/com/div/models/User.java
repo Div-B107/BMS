@@ -37,8 +37,6 @@ public class User {
     private String fin;
     @OneToOne
     private Loan loan;
-
-
     @ManyToMany(fetch =FetchType.LAZY )
     @JoinTable( schema = "bank_management",
             name = "users_roles",

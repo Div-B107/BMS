@@ -2,6 +2,7 @@ package com.div.properties;
 
 import com.div.models.Loan;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -20,6 +21,7 @@ public class LoanTypes {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "type_name", length = 100)
+    @NotNull(message = "Loan Type Name can not be null!")
     private String typeName;
     @Column(name = "description")
     private String description;
