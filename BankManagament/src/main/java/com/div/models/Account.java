@@ -1,10 +1,12 @@
 package com.div.models;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity(name = "Account")
 @Table(name = "accounts" , schema ="bank")
+@Getter
 @NoArgsConstructor
 public class Account {
     @Id
@@ -16,6 +18,10 @@ public class Account {
     private String ibanId;
     private String swift;
     private double balance;
+    @OneToOne(cascade = {CascadeType.REMOVE, CascadeType.MERGE})
+    private User user;
+
+
 
 
 
